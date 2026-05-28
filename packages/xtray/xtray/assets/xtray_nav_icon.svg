@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">xtray navigation icon</title>
+  <desc id="desc">Navigation icon for xtray with a tintable tray base.</desc>
+  <g fill="#000000">
+    <polygon points="28,28 70,28 128,86 186,28 228,28 156,100 228,172 186,172 128,114 70,172 28,172 100,100"/>
+    <path fill="#ff00ff" d="M24 176 H86 L98 190 H158 L170 176 H232 L220 224 H36 Z"/>
+  </g>
+</svg>
