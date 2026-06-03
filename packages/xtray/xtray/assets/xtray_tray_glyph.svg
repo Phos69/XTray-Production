@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">xtray tray glyph</title>
+  <desc id="desc">Tray base from the xtray logo, tintable for theme accent.</desc>
+  <path fill="#000000" d="M24 104 H86 L98 118 H158 L170 104 H232 L220 152 H36 Z"/>
+</svg>
