@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">xtray minimal logo</title>
+  <desc id="desc">Minimal monocolor logo for xtray with a bold X and tray wordmark.</desc>
+  <g fill="#000000">
+    <!-- X icon -->
+    <polygon points="40,40 100,40 170,110 240,40 300,40 200,140 305,245 245,245 170,170 95,245 35,245 140,140"/>
+    <!-- tray base -->
+    <path fill="#ff00ff" d="M30 230 H120 L135 245 H205 L220 230 H310 L295 275 H45 Z"/>
+  </g>
+  <text x="360" y="205" font-family="Impact, 'Arial Narrow', 'Arial Black', sans-serif" font-weight="700" font-size="180" letter-spacing="-2" fill="#000000">tray</text>
+</svg>

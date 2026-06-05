@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+bin/
+obj/
+**/bin/
+**/obj/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# IDE / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Logs and local config
+logs/
+*.log
+*.har
+scratch/
+.env
+.env.local
+
+# Node.js runtime (non va in repo — troppo grande)
+tools/node/
+
+# Firmware binari e pagine download
+firmware/*.rbi
+firmware/*.html
+
+# File temporanei exploit (grandi, non appartengono alla repo)
+Gitsrp-min.js
+Gittch-exploit.zip
+
+# Claude Code settings locali
+.claude/settings.local.json

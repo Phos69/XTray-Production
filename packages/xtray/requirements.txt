@@ -1,0 +1,5 @@
+click>=8.1
+fastapi>=0.110
+uvicorn[standard]>=0.27
+PySide6>=6.7
+paho-mqtt>=2.1

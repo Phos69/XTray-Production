@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xtray-sync"
+version = "0.1.1b2"
+description = "LAN discovery and encrypted import/sync helpers for XTray"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Arrigo Croce" }]
+dependencies = [
+    "cryptography>=42",
+    "keyring>=24",
+    "xtray>=0.1.0",
+    "computer_manager>=0.1.0",
+    "network-manager>=0.1.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["xtray_sync*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
