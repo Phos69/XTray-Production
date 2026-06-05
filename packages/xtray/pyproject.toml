@@ -1,0 +1,71 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xtray"
+version = "0.1.1b3"
+description = "Windows tray and Home Assistant shell for Computer Manager and Network Manager"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Arrigo Croce" }]
+dependencies = [
+    "click>=8.1",
+]
+
+[project.optional-dependencies]
+api = ["fastapi>=0.110", "uvicorn[standard]>=0.27"]
+tray = ["PySide6>=6.7", "paho-mqtt>=2.1"]
+integrations = ["computer_manager>=0.1.0", "network-manager>=0.1.0"]
+full = [
+    "PySide6>=6.7",
+    "paho-mqtt>=2.1",
+    "fastapi>=0.110",
+    "uvicorn[standard]>=0.27",
+    "computer_manager>=0.1.0",
+    "network-manager>=0.1.0",
+    "xtray-sync>=0.1.0",
+]
+build = [
+    "PySide6>=6.7",
+    "paho-mqtt>=2.1",
+    "pyinstaller>=6.0",
+    "computer_manager>=0.1.0",
+    "network-manager>=0.1.0",
+    "xtray-sync>=0.1.0",
+]
+dev = [
+    "pytest>=8.0",
+    "fastapi>=0.110",
+    "httpx>=0.27",
+    "paho-mqtt>=2.1",
+    "ruff>=0.4",
+    "computer_manager>=0.1.0",
+    "network-manager>=0.1.0",
+    "xtray-sync>=0.1.0",
+]
+
+[project.scripts]
+xtray = "xtray.cli:main"
+
+[project.gui-scripts]
+xtray-tray = "xtray.tray:main"
+
+[tool.setuptools.packages.find]
+include = ["xtray*"]
+
+[tool.setuptools.package-data]
+xtray = ["assets/*.svg"]
+"xtray.core.assets.mdi" = ["*.svg", "LICENSE", "README.md"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
